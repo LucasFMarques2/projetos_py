@@ -2,13 +2,17 @@
 Jogo da velha
 '''
 import os
+
 palavra = input("Informe uma palavra:")
+palavra = palavra.lower()
 letra_acertada = ''
 tentativas = len(palavra)
 letras_ja_incluidas = ''
 os.system("cls")
+
 while True:
     letra_digitada = input("Informe uma letra:")
+    letra_digitada = letra_digitada.lower()
 
     if letra_digitada in letras_ja_incluidas:
         print("Essa letra já digitada, informe uma outra!")
